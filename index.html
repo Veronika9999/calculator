@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Калькулятор 2.0</title>
+</head>
+<body>
+    <div class="box">
+        <input type="text" value="0" disabled maxlength="10">
+        <div class="buttons">
+            <div class="buttons__row">
+                <button class="buttons__item buttons__item_light del">AC</button>
+                <button class="buttons__item buttons__item_light plus-minus">+/-</button>
+                <button class="buttons__item buttons__item_light percent">%</button>
+                <button value="/" class="buttons__item buttons__item_orange math-simvol division">÷</button>
+            </div>
+            <div class="buttons__row">
+                <button class="buttons__item buttons__item_dark">7</button>
+                <button class="buttons__item buttons__item_dark">8</button>
+                <button class="buttons__item buttons__item_dark">9</button>
+                <button value="*" class="buttons__item buttons__item_orange math-simvol multiplication">×</button>
+            </div>
+            <div class="buttons__row">
+                <button class="buttons__item buttons__item_dark">4</button>
+                <button class="buttons__item buttons__item_dark">5</button>
+                <button class="buttons__item buttons__item_dark">6</button>
+                <button value="-" class="buttons__item buttons__item_orange math-simvol minus">-</button>
+            </div>
+            <div class="buttons__row">
+                <button class="buttons__item buttons__item_dark">1</button>
+                <button class="buttons__item buttons__item_dark">2</button>
+                <button class="buttons__item buttons__item_dark">3</button>
+                <button value="+" class="buttons__item buttons__item_orange math-simvol plus">+</button>
+            </div>
+            <div class="buttons__row">
+                <button class="buttons__item buttons__item_dark buttons__item__zero">0</button>
+                <button class="buttons__item buttons__item_dark comma">,</button>
+                <button value="=" class="buttons__item buttons__item_orange equals">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body:root{
+    --size: 88px;
+}
+.box{
+    width: 320px;
+    height: 568px;
+    background: rgb(48, 47, 47);
+    border-radius: 10px;
+    padding: 56px 16px 16px 16px;
+}
+input{
+    width: 100%;
+    height: 88px;
+    background: transparent;
+    font-size: var(--size);
+    color: #fff;
+    text-align: right;
+    font-weight: 300;
+}
+.buttons__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons__item{
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+.buttons__item_light{
+    background: #e4e4e4a1;
+    color: black;
+}
+.buttons__item_light:hover{
+    background: #e4e4e4;
+}
+.buttons__item_orange{
+    background: rgba(255, 166, 0, 0.586);
+    color: white;
+}
+.buttons__item_orange:hover{
+    background: orange;
+}
+.buttons__item_dark{
+    background: rgba(97, 97, 97, 0.605);
+}
+.buttons__item_dark:hover{
+    background: rgb(117, 117, 117);
+}
+.buttons__item__zero{
+    width: 139.3px;
+    height: 65px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 0 0 25px;
+}
+.math-simvol_active{
+    background: #fff;
+    color: orange;
+}
+.math-simvol_active:hover{
+    background: #fff;
+    color: orange;
+}
